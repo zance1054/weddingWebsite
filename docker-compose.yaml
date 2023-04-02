@@ -1,0 +1,9 @@
+version: '3'
+services:
+  web:
+    image: fielding-wedding-website:v1
+    build: .
+    container_name: fielding_wedding_website
+    restart: always
+    ports:
+      - "511:423"
